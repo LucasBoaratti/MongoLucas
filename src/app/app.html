@@ -1,12 +1,18 @@
+<!-- HTML principal das páginas. Cada conteúdo colocado aqui, ficará fixo em todas as páginas -->
+
+<!-- Cabeçalho do site -->
 <header>
+    <h1>MongóLucas</h1>
     <nav>
         <ul>
-            <li><a routerLink="/" class="link">Cultura</a></li>
+            <li><a routerLink="/" class="link">Home</a></li>
+            <li><a routerLink="/culturas" class="link">Cultura</a></li>
             <li><a routerLink="/receitas" class="link">Receitas</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
+    <!-- Configuração de rotas do Angular -->
     <router-outlet></router-outlet>
 </main>

@@ -1,9 +1,25 @@
+// Importando as variáveis do SCSS global
+
 @use '../styles.scss' as *;
 
+// Estilizando o cabeçalho para todas as páginas
+
 header {
-    background-color: $cor-primaria;
+    background-color: $cor-secundaria;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+h1 {
+    background-image: linear-gradient(to right, yellow, white, blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+// Estilzação dos links do cabeçalho
 
 ul {
     font-size: 20px;
@@ -13,6 +29,8 @@ ul {
     list-style-type: none;
     gap: 60px;
 }
+
+// Estilização dos links e adicionando um underline animado embaixo dos links
 
 .link {
     cursor: pointer;
@@ -27,7 +45,7 @@ ul {
         bottom: 0;
         transform: scaleX(0);
         transform-origin: center;
-        background-color: $cor-terciaria;
+        background-color: $cor-primaria;
         transition: transform 0.3s ease-in-out;
     }
 
@@ -36,7 +54,9 @@ ul {
     }
 }
 
+// Estilização das âncoras, retirando o underline
+
 a {
     text-decoration: none;
-    color: $cor-fonte-escura;
+    color: $cor-fonte-clara;
 }
