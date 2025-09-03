@@ -5,7 +5,7 @@
 // Estilizando o cabeçalho para todas as páginas
 
 header {
-    background-color: $cor-secundaria;
+    background-color: $cor-primaria;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -13,7 +13,7 @@ header {
 }
 
 h1 {
-    background-image: linear-gradient(to right, yellow, white, blue);
+    background-image: linear-gradient(to right, $cor-terciaria, white, $cor-secundaria);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
