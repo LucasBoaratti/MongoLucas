@@ -1,3 +1,5 @@
+// Variáveis de cor e fonte
+
 $cor-fundo-paginas: #E5E7E3;
 $cor-fonte-clara: #ffffff;
 $cor-fonte-escura: #000000;
@@ -6,12 +8,16 @@ $cor-secundaria: #DA2032;
 $cor-terciaria: #0066B3;
 $tamanho-fonte: 16px;
 
+// Reset geral das páginas
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+// Estilização padrão das páginas
 
 body {
     background-color: $cor-fundo-paginas;
