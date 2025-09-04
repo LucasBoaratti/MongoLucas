@@ -60,3 +60,14 @@ a {
     text-decoration: none;
     color: $cor-fonte-clara;
 }
+
+// Estilizando o rodapé
+
+footer {
+    background-color: $cor-primaria;
+    color: $cor-fonte-clara;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    font-size: 20px;
+}
