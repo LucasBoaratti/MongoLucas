@@ -1,15 +1,56 @@
+// Importando as variáveis de estilização
+
 @use '../../styles.scss' as *;
 
 h1 {
     text-align: center;
-    margin: 10px 0;
+    margin: 50px;
 }
 
-h2 {
-    margin: 15px 5px;
-}
+// Estilizando o mapa da mongólia e os pins
 
-p {
-    margin: 0 5px;
-    text-align: justify;
+.mapaCuriosidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mongolia {
+        display: inline-block;
+        position: relative;
+        max-width: 100%;
+    
+        .mapa {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        // Estilizando as posições dos pins no mapa
+    
+        .pin {
+            position: absolute;
+            transform: translate(-50%, -100%);
+            width: 70px;   
+        }
+
+        .pin1 {
+            top: 40%;
+            left: 40%;
+        }
+
+        .pin2 {
+            top: 40%;
+            left: 80%;
+        }
+
+        .pin3 {
+            top: 85%;
+            left: 60%;
+        }
+
+        .pin4 {
+            top: 70%;
+            left: 25%;
+        }
+    }
 }
