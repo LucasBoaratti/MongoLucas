@@ -24,3 +24,10 @@ body {
     color: $cor-fonte-escura;
     font-size: $tamanho-fonte;
 }
+
+// Fixando o rodapé embaixo do site
+
+main {
+    flex: 1;
+    min-height: 100vh;
+}

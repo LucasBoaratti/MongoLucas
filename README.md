@@ -1,4 +1,6 @@
-# MongoLucas
+# MongóLucas
+
+# OBS: Realizar a página de Login e Cadastro
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.1.
 
