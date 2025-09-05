@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 })
 export class Musicas {
     // Controlando a visibilidade do modal com open
-    @Input() openModalMusica = false;
+    @Input() open = false;
     // close é uma função que será chamada para fechar o modal
     @Input() fecharModalMusica!: () => void;
 }
