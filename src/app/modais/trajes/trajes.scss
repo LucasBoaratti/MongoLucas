@@ -1,4 +1,4 @@
-// Importando as variáveis globais do SCSS
+// Importando as variáveis global do SCSS
 
 @use '../../../styles.scss' as *;
 
@@ -11,10 +11,10 @@
     }
 }
 
-
-// Container do modal 
+// Estilizando o container do modal
 
 .modalContainer {
+    background-color: $cor-fundo-modal;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,61 +25,53 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: $cor-fundo-modal;
 
-    // Modal
+    // Estilização do modal
 
     .modal {
         background-color: $cor-secundaria;
         border-radius: 25px;
-        padding: 15px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 550px;
         height: fit-content;
+        padding: 15px;
         color: $cor-fonte-clara;
         opacity: 0;
         transform: translateY(20px);
-        animation: fadeModal 0.5s ease-out forwards;
+        animation: fadeModal 0.5s ease-in-out forwards;
 
-        .informacoesFestivais {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            h2 {
-                font-size: 30px;
-                text-align: center;
-                margin-bottom: 20px;
-                background-image: linear-gradient(to right, $cor-primaria, white, $cor-terciaria);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-            p {
-                font-size: 18px;
-                text-align: justify;
-                width: 500px;
-            }
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            background-image: linear-gradient(to right, $cor-primaria, white, $cor-terciaria);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        // Imagem do modal
+        p {
+            font-size: 18px;
+            text-align: justify;
+            width: 500px;
+        }
+
+        // Estilização da imagem
 
         img {
             width: 500px;
             height: 300px;
-            border-radius: 20px;
+            border-radius: 25px;
             margin-top: 30px;
         }
 
         // Estilização do botão
 
         .botao {
-            margin-top: 20px;
             text-align: center;
+            margin-top: 20px;
         }
 
         button {
@@ -94,8 +86,8 @@
         }
 
         button:hover {
-            color: $cor-fonte-clara;
             background-color: $cor-primaria;
+            color: $cor-fonte-clara;
         }
     }
 }

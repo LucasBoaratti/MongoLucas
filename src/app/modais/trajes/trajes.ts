@@ -2,15 +2,15 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-festival',
+  selector: 'app-trajes',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './festival.html',
-  styleUrl: './festival.scss'
+  templateUrl: './trajes.html',
+  styleUrl: './trajes.scss'
 })
-export class Festival {
+export class Trajes {
     // Controlando a visibilidade do modal com open
     @Input() open = false;
     // close é uma função que será chamada para fechar o modal
-    @Input() closeModalFestivais!: () => void;
+    @Input() closeModalTrajes!: () => void;
 }
