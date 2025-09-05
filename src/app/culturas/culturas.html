@@ -5,21 +5,19 @@
             <img src="assets/Mapa_Mongolia.png" alt="Mapa da Mongólia" class="mapa">
             <!-- Pins -->
             <div class="culturasModal">
-                <img src="assets/Pin.png" alt="Pin" class="pin pin1" (click)="abrirModal()">
-                <img src="assets/Pin.png" alt="Pin" class="pin pin2">
+                <img src="assets/Pin.png" alt="Pin" class="pin pin1" (click)="abrirModalFestivais()">
+                <img src="assets/Pin.png" alt="Pin" class="pin pin2" (click)="abrirModalTrajes()">
                 <img src="assets/Pin.png" alt="Pin" class="pin pin3">
                 <img src="assets/Pin.png" alt="Pin" class="pin pin4">
-                <!-- Controlando a visibilidade do modal (openModal) e função de fechar o modal -->
-                <app-festival [open]="openModal" [close]="fecharModal"></app-festival>
+                <!-- Controlando o estado do visibilidade do modal (openModal) e função de fechar o modal (fecharModal) -->
+                <app-festival [open]="openModalFestivais" [closeModalFestivais]="fecharModalFestivais"></app-festival>
+                <app-trajes [open]="openModalTrajes" [closeModalTrajes]="fecharModalTrajes"></app-trajes>
             </div>
         </section>
     </div>
     <!-- 
-    <h2>Traje nacional</h2>
-    <p>O traje tradicional mongol é o traje nacional <em>odeel</em>, um vestido longo feito de seda de cores brilhantes, geralmente estampada que abotoa até o pescoço do lado direito. O <em>deel</em> é usado por homens e mulheres, mas o homens adicionam uma faixa de cor contrastante na cintura. Para o inverno, o <em>deel</em> tem um forro de lã.</p>
-
-    <h2>Músicas</h2>
-    <p>Os mongóis são conhecidos como um povo de música e poesia. Seu canto, sonoro, ousado e apaixonado é o verdadeiro reflexo do temperamento do povo mongol. "Haolibao" é uma forma mongol de canto. Também são muito conhecidos "Mahatale" (paean), "Yurele (parabéns), "Dairileqi" (canto antifonal), enigmas, provérbios, histórias, lendas, contos de fadas e fábulas.</p>
+    
+    
 
     <h2>Danças</h2>
     <p>As danças mongóis são conhecidas em toda a China. Entre elas modalidades de dança como "Saber", "Ordos", "Andai", "Casamento Buryat", "Horse Breaker" e "Cavalo Negro". Geralmente são animadas e caracterizadas por seus passos rápidos. O violino é o instrumento musical favorito dos mongóis. Ele é usado para acompanhar as canções tradicionais com seus sons graves e profundos, amplos e melodiosos.</p> -->
