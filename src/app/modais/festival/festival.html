@@ -1,0 +1,12 @@
+<!-- Componente do modal -->
+<!-- O modal só sera aberto se ngIf for open ou close -->
+<section class="modalContainer" *ngIf="open">
+    <div class="modal">
+        <h2>Festivais</h2>
+        <p>Os festivais de dança e música mongóis, por exemplo, são extremamente comuns no país, principalmente no verão. Já as atividades esportivas como lutas, corridas de cavalo e disputa de arco e flecha são muito praticadas pela população. Na alimentação, se destaca o uso de carne, inclusive proveniente de caça, além de leite e derivados.</p>
+        <div class="botao">
+            <!-- Botão chama a função close, declarada em festival.ts -->
+            <button type="button" (click)="close()">Fechar</button>
+        </div>
+    </div>
+</section>
