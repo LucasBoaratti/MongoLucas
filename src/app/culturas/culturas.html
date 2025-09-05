@@ -4,17 +4,17 @@
         <section class="mongolia">
             <img src="assets/Mapa_Mongolia.png" alt="Mapa da Mongólia" class="mapa">
             <!-- Pins -->
-            <img src="assets/Pin.png" alt="Pin" class="pin pin1">
-            <img src="assets/Pin.png" alt="Pin" class="pin pin2">
-            <img src="assets/Pin.png" alt="Pin" class="pin pin3">
-            <img src="assets/Pin.png" alt="Pin" class="pin pin4">
+            <div class="culturasModal">
+                <img src="assets/Pin.png" alt="Pin" class="pin pin1" (click)="abrirModal()">
+                <img src="assets/Pin.png" alt="Pin" class="pin pin2">
+                <img src="assets/Pin.png" alt="Pin" class="pin pin3">
+                <img src="assets/Pin.png" alt="Pin" class="pin pin4">
+                <!-- Controlando a visibilidade do modal (openModal) e função de fechar o modal -->
+                <app-festival [open]="openModal" [close]="fecharModal"></app-festival>
+            </div>
         </section>
     </div>
-    <!-- <h1>Cultura da Mongólia</h1>
-
-    <h2>Festivais</h2>
-    <p>Os festivais de dança e música mongóis, por exemplo, são extremamente comuns no país, principalmente no verão. Já as atividades esportivas como lutas, corridas de cavalo e disputa de arco e flecha são muito praticadas pela população. Na alimentação, se destaca o uso de carne, inclusive proveniente de caça, além de leite e derivados.</p>
-
+    <!-- 
     <h2>Traje nacional</h2>
     <p>O traje tradicional mongol é o traje nacional <em>odeel</em>, um vestido longo feito de seda de cores brilhantes, geralmente estampada que abotoa até o pescoço do lado direito. O <em>deel</em> é usado por homens e mulheres, mas o homens adicionam uma faixa de cor contrastante na cintura. Para o inverno, o <em>deel</em> tem um forro de lã.</p>
 
