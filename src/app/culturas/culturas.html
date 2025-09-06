@@ -7,18 +7,17 @@
             <div class="culturasModal">
                 <img src="assets/Pin.png" alt="Pin" class="pin pin1" (click)="abrirModalFestivais()">
                 <img src="assets/Pin.png" alt="Pin" class="pin pin2" (click)="abrirModalTrajes()">
-                <img src="assets/Pin.png" alt="Pin" class="pin pin3">
-                <img src="assets/Pin.png" alt="Pin" class="pin pin4">
+                <img src="assets/Pin.png" alt="Pin" class="pin pin3" (click)="abrirModalMusicas()">
+                <img src="assets/Pin.png" alt="Pin" class="pin pin4" (click)="abrirModalDancas()">
                 <!-- Controlando o estado do visibilidade do modal (openModal) e função de fechar o modal (fecharModal) -->
                 <app-festival [open]="openModalFestivais" [closeModalFestivais]="fecharModalFestivais"></app-festival>
                 <app-trajes [open]="openModalTrajes" [closeModalTrajes]="fecharModalTrajes"></app-trajes>
+                <app-musicas [open]="openModalMusicas" [closeModalMusicas]="fecharModalMusicas"></app-musicas>
+                <app-dancas [open]="openModalDancas" [closeModalDancas]="fecharModalDancas"></app-dancas>
             </div>
         </section>
+        <div class="comoUsar">
+            <p>Clique sobre os pins para conhecer as principais culturas sobre a Mongólia :D</p>
+        </div>
     </div>
-    <!-- 
-    
-    
-
-    <h2>Danças</h2>
-    <p>As danças mongóis são conhecidas em toda a China. Entre elas modalidades de dança como "Saber", "Ordos", "Andai", "Casamento Buryat", "Horse Breaker" e "Cavalo Negro". Geralmente são animadas e caracterizadas por seus passos rápidos. O violino é o instrumento musical favorito dos mongóis. Ele é usado para acompanhar as canções tradicionais com seus sons graves e profundos, amplos e melodiosos.</p> -->
 </main>
