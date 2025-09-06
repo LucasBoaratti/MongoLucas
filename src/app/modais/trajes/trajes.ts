@@ -11,6 +11,6 @@ import { CommonModule } from '@angular/common';
 export class Trajes {
     // Controlando a visibilidade do modal com open
     @Input() open = false;
-    // close é uma função que será chamada para fechar o modal
+    // Função que será chamada para fechar o modal
     @Input() closeModalTrajes!: () => void;
 }

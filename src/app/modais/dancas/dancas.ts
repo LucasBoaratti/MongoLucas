@@ -2,15 +2,15 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-musicas',
+  selector: 'app-dancas',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './musicas.html',
-  styleUrl: './musicas.scss'
+  templateUrl: './dancas.html',
+  styleUrl: './dancas.scss'
 })
-export class Musicas {
+export class Dancas {
     // Controlando a visibilidade do modal com open
     @Input() open = false;
     // Função que será chamada para fechar o modal
-    @Input() closeModalMusicas!: () => void;
+    @Input() closeModalDancas!: () => void;
 }
